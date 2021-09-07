@@ -1,6 +1,6 @@
 # auth_screen
 
-A new Flutter project.
+Amazing Animated Authentication Screen.
 
 ## Getting Started
 
