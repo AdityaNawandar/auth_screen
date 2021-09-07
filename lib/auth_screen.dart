@@ -52,6 +52,7 @@ class _AuthScreenState extends State<AuthScreen>
   Widget build(BuildContext context) {
     final _size = MediaQuery.of(context).size;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: AnimatedBuilder(
           animation: _animationController,
           //stream: null,
@@ -117,7 +118,7 @@ class _AuthScreenState extends State<AuthScreen>
                   duration: kDefaultDuration,
                   bottom: isShowingSignup
                       ? (_size.height / 2) - 110
-                      : _size.height * 0.3,
+                      : _size.height * 0.32,
                   //(width of login screen is _size.width * 0.88 and width of the text container is 160)
                   left: isShowingSignup ? 0 : _size.width * 0.44 - 80,
                   child: DefaultTextStyle(
@@ -155,7 +156,7 @@ class _AuthScreenState extends State<AuthScreen>
                   duration: kDefaultDuration,
                   bottom: !isShowingSignup
                       ? (_size.height / 2) - 110
-                      : _size.height * 0.3,
+                      : _size.height * 0.32,
                   //(width of login screen is _size.width * 0.88 and width of the text container is 160)
                   //left: isShowingSignup ? 0 : _size.width * 0.44 - 80,
                   right: !isShowingSignup ? 0 : _size.width * 0.44 - 80,
